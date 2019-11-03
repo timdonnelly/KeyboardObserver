@@ -3,6 +3,8 @@ import SwiftUI
 // Represents the current state of the system keyboard.
 public struct KeyboardState: Equatable {
     
+    public init() {}
+    
     // The keyboard frame in global (screen) coordinates
     public var frame: CGRect?
     
