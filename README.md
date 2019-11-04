@@ -30,7 +30,7 @@ import KeyboardObserver
 
 ### `.avoidingKeyboard()`
 
-This is the simplest way to make UI keyboard-aware. It automatically insets all children to account for the keyboard:
+This is the simplest way to make UI keyboard-aware: it automatically insets all children when the keyboard is visible. Layout changes are animated to match the system keyboard.
 
 ```swift
 VStack {
@@ -69,7 +69,7 @@ struct MyView: View {
 
 ### `.onKeyboardChange(_:)`
 
-Provide a closure to manually respond to keyboard changes.
+The provided closure is invoked to manually respond to keyboard changes. An `Animation` value is included that can be used to to drive custom transitions.
 
 ```swift
 import KeyboardObserver
