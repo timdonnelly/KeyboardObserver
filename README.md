@@ -27,7 +27,7 @@ struct MyView: View {
     @State private var state = KeyboardState()
 
     var body: some View {
-        GeometryProxy { proxy in
+        GeometryReader { proxy in
             VStack {
                 Text("Hello, world!")
                 TextField("Title", text: self.$text)
